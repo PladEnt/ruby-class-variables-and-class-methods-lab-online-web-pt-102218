@@ -16,7 +16,7 @@ class Song
     puts @@count
   end
   def self.genre
-    puts @@genres
+    @@genres
   end
   def artist
     puts @@artists
