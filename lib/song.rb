@@ -9,10 +9,15 @@ class Song
     @genre = genre
     @@count += 1
     @@genre.each do |tipe|
-      if tipe 
-      @@genre << genre
+      if tipe != genre
+        @@genre << genre
+      end
     end
-    @@artist << artist
+    @@artist.each do |who|
+      if who != artist
+        @@artist << artist
+      end
+    end
   end
   def count
     puts @@count
